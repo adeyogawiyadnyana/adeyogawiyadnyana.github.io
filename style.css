@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: aliceblue;
+    background: rgb(36, 36, 36);
+    background: linear-gradient(
+        180deg,
+        rgba(36, 36, 36, 1) 0%,
+        rgba(25, 25, 25, 1) 50%,
+        rgba(36, 36, 36, 1) 100%
+    );
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.description {
+    width: 50%;
+    text-align: center;
+}
+
+.content-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.list-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-copy {
+    cursor: pointer;
+    text-decoration: none;
+}
+.item-copy:hover {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+.content-contact {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-content-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    text-decoration: none;
+}
+.list-social {
+    width: 140px;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    row-gap: 10px;
+    text-align: center;
+    gap: 10px;
+}
+
+.list-social:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.list-social a {
+    color: black;
+    text-decoration: none;
+}
