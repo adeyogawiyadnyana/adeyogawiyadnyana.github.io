@@ -1,7 +1,9 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 body {
     color: aliceblue;
     background: rgb(36, 36, 36);
@@ -12,6 +14,7 @@ body {
         rgba(36, 36, 36, 1) 100%
     );
 }
+
 .container {
     width: 100%;
     height: 100vh;
@@ -20,16 +23,20 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 20px;
 }
 
 .description {
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
     text-align: center;
 }
 
 .content-footer {
     width: 100%;
+    border: 2px solid red;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -41,32 +48,41 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .item-copy {
     cursor: pointer;
     text-decoration: none;
 }
+
 .item-copy:hover {
     cursor: pointer;
     text-decoration: none;
     font-weight: 600;
 }
+
 .content-contact {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .list-content-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    row-gap: 20px;
-    column-gap: 20px;
-    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4px;
+}
+@media (min-width: 992px) {
+    .list-content-media {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8px;
+    }
 }
 .list-social {
     width: 140px;
